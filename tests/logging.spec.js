@@ -2,7 +2,7 @@
 import { test, expect } from '@playwright/test';
 import { Main } from '../pages/main';
 
-test.skip('check logging', async ({ page }) => {
+test('check logging', async ({ page }) => {
   const main = new Main(page);
   await main.navigateTo();
 
