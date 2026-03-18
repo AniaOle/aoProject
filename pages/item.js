@@ -8,7 +8,7 @@ export class Item{
         this.productPrice = page.getByRole('article').locator('.price');
         this.buyBtn =  page.getByTestId('buy-btn-1');
         this.toast = page.locator('.toast-container').locator('div');
-        // this.confirmation = page.locator('.toast toast-success');
+        this.confirmation = page.locator('.toast.toast-success');
         this.backBtn = page.locator('.back');
     }
 }

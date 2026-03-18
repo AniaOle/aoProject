@@ -23,7 +23,7 @@ test('adding an item to the cart', async ({ page }) => {
   await expect(item.productPrice).toHaveText('Cena: 199.99 zł');
   await item.buyBtn.click();
   // console.log(await item.toast.innerText());
-  // console.log(await item.confirmation.innerText());
+  console.log(await item.confirmation.innerText());
   expect(await item.toast.first().innerText()).toEqual('Dodano do koszyka: Miecz Runiczny');
   await item.buyBtn.click();
   expect(await item.toast.nth(1).innerText()).toEqual('Dodano do koszyka: Miecz Runiczny');
